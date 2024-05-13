@@ -3,6 +3,7 @@
 .menu {
     grid-area: navbar;
     background-color: #F2DBD5;
+    text-align: center;
 }
 .menu-burger {
     display: none;
@@ -11,8 +12,8 @@
 .options {
     background-color: #F4EEED;
     grid-area: options;
-    padding-left:  3%;
-    padding-right: 3%;
+    padding-left:  6%;
+    padding-right: 6%;
     display: grid;
     align-items: center; 
 }
@@ -51,8 +52,12 @@ footer {
 }
 
 .logo img {
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 65px;
+}
+.nav-text {
+    padding: 6%;
+    font-weight: bolder;
 }
 
 .navbar {
@@ -96,7 +101,7 @@ li:hover {
     background-color:white;
 }
 .grid-item {
-    border: 2px solid #F4EEED;
+    border: 1px solid #F4EEED;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -108,9 +113,9 @@ li:hover {
 .item-img {
 width: 200px;
 height: 300px;
-padding:2%;
+padding:1%;
 margin-bottom: 2%;
-border:solid 2px #F4EEED;
+border:solid 1px #F4EEED;
 }
 
 .btn {
@@ -151,7 +156,7 @@ border:solid 2px #F4EEED;
 
 .icon-footer {
     text-align: center;
-    padding-top: 20%;
+    padding-top: 2%;
   }
 .footer-text {
     text-align: center;
@@ -174,6 +179,7 @@ border:solid 2px #F4EEED;
         grid-template-columns: 1fr;
         overflow-y: scroll;
        }
+
     .menu-burger {
         display: block;
     }
@@ -197,5 +203,9 @@ border:solid 2px #F4EEED;
     }
     .pagination {
         margin-bottom: 1%;
+    }
+    .options {
+        padding-left: 7%;
+        padding-right: 7%;
     }
 }
