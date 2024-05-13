@@ -1,16 +1,20 @@
 
 
-header {
-    background-color: #F4EEED;
-    grid-area: header;
-    display: grid;;
-    padding: 3%;
-    align-items: center; 
+.menu {
+    grid-area: navbar;
+    background-color: #F2DBD5;
+}
+.menu-burger {
+    display: none;
 }
 
-.menu {
-    grid-area: aside;
-    background-color: #F2DBD5;
+.options {
+    background-color: #F4EEED;
+    grid-area: options;
+    padding-left:  3%;
+    padding-right: 3%;
+    display: grid;
+    align-items: center; 
 }
 
 main {
@@ -27,8 +31,8 @@ footer {
 .container-grid {
     display: grid;
     grid-template-areas: 
-    "aside header"
-    "aside main"
+    "navbar options"
+    "navbar main"
     "footer main";
     grid-auto-columns: 15% auto;
     grid-template-rows: 10% auto 15%;
@@ -53,10 +57,12 @@ footer {
 
 .navbar {
     background-color:#F2DBD5;
-    list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+ul {
+    list-style: none;
 }
 
 li:hover {
@@ -72,11 +78,12 @@ li:hover {
 }
 .options {
     display: grid;
-    padding: 3%;
+
     align-items: center;   
 }
-.options h5 {
+.options p {
     text-align: center;
+    margin-bottom: 1%;
 }
 
 .form-select {
@@ -155,16 +162,40 @@ border:solid 2px #F4EEED;
     .container-grid {
         display: grid;
         grid-template-areas: 
-        "aside"
-        "header"
+        "navbar"
+        "options"
         "main"
         "footer";
         grid-template-columns: 1fr;
-        grid-template-rows: 5% 5% auto 10%;
+        grid-template-rows: 2% 2% auto 2%;
     }
     .galery {
         display:grid;
         grid-template-columns: 1fr;
+        overflow-y: scroll;
+       }
+    .menu-burger {
+        display: block;
     }
-
+    .navbar ul {
+        display: none;
+    }
+    .logo img {
+        width: 60px;
+        height: 60px;
+    }
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .icon-footer {
+        padding-top:  2%;
+    }
+    .footer-text {
+        padding-top: 1%;
+    }
+    .pagination {
+        margin-bottom: 1%;
+    }
 }

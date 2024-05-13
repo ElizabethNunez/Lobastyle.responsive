@@ -30,10 +30,33 @@
 <body>
 
     <div class="container-grid">
-  <!--Heder filtro de búsqueda-->
-        <header class="options"> 
-                <h5>Ordenar por</h5>
+        <section class= "menu"> 
+
+            <div class="logo" >
+                <img src="./assets/img/logo.png" alt="">
+            </div>
+
+    <!--Menú de navegación-->
+            <nav class="navbar">
+                <ul>
+                
+                    <li>Inicio</li>
+                    <li>Catálogo</li>
+                    <li>Ofertas</li>
+                    <li>Contactos</li>
+                </ul>
+                <span class="menu-burger">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </nav>
+            
+            
+        </section>
+
+    <!--filtro de búsqueda-->
+        <section class="options"> 
                 <div>
+                    <p>Ordenar por</p>
                     <select class="form-select" aria-label="Default select example">
                         <option selected>Precio</option>
                         <option value="1">Precio mayor a menor</option>
@@ -41,24 +64,9 @@
                         <option value="3">Mayor decuento</option>
                     </select>
                 </div>
-        </header>
-
-    <!--Menú de navegación-->
-        <aside class= "menu"> 
-
-                <div class="logo" >
-                    <img src="./assets/img/logo.png" alt="">
-                </div>
-               
-                <ul class="navbar" >
-                    
-                    <li>Inicio</li>
-                    <li>Catálogo</li>
-                    <li>Ofertas</li>
-                    <li>Contactos</li>
-                </ul>
-        </aside>
-
+        </section>
+    
+    <!--Sección principal-->
         <main> 
             <div class="contenedor-principal">
 
@@ -116,7 +124,8 @@
                     </div>
             
                 </div>
-                <!--Paginación-->
+
+    <!--Paginación-->
                 <div class="pagination">
                     <nav aria-label="Page navigation example">
                         <ul class="pagination">
